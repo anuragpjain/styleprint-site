@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Styleprint — Turn any website into a design system</title>
+  <meta name="description" content="Extract colors, typography, spacing, radii and shadows from any live page → copy as Tailwind, CSS variables or JSON. One click, 100% local." />
+
+  <meta property="og:title" content="Styleprint — Turn any website into a design system" />
+  <meta property="og:description" content="Extract any site's design tokens → Tailwind / CSS / JSON. One click. $5.99 one-time." />
+  <meta property="og:image" content="shot-2-panel.png" />
+  <meta property="og:type" content="website" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23111420'/><circle cx='40' cy='42' r='22' fill='%238b7cff'/><circle cx='60' cy='42' r='22' fill='%23c17cff' fill-opacity='.85'/><circle cx='50' cy='60' r='22' fill='%233ecf8e' fill-opacity='.85'/></svg>">
+  <style>
+    body { background: radial-gradient(120% 80% at 50% -10%, #15131f 0%, #0b0d12 55%); }
+    .grad-text { background: linear-gradient(100deg,#8b7cff,#c17cff 55%,#3ecf8e); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .grad-btn { background: linear-gradient(135deg,#8b7cff,#c17cff); }
+    .card { background: #14171f; border: 1px solid rgba(255,255,255,.07); }
+  </style>
+</head>
+<body class="text-slate-100 antialiased">
+
+  <header class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+    <span class="flex items-center gap-2.5 font-bold text-[15px]">
+      <span class="w-6 h-6 rounded-lg" style="background:conic-gradient(from 210deg,#8b7cff,#c17cff,#3ecf8e,#8b7cff)"></span>
+      Styleprint
+    </span>
+    <a href="#get" class="text-sm grad-btn text-white font-semibold px-4 py-2 rounded-lg">Get it — $5.99</a>
+  </header>
+
+  <!-- Hero -->
+  <section class="max-w-4xl mx-auto px-6 pt-16 pb-10 text-center">
+    <p class="text-[13px] font-semibold uppercase tracking-[.2em] text-violet-300/80 mb-5">For developers &amp; designers</p>
+    <h1 class="text-4xl sm:text-6xl font-black leading-[1.05] tracking-tight">
+      Turn any website<br><span class="grad-text">into a design system.</span>
+    </h1>
+    <p class="mt-6 text-lg text-slate-300 max-w-xl mx-auto">
+      Extract every color, font, spacing value, radius and shadow from any live page —
+      then copy it as a <b class="text-white">Tailwind config</b>, <b class="text-white">CSS variables</b>, or <b class="text-white">JSON</b>. One click.
+    </p>
+    <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+      <a href="#get" class="grad-btn text-white font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-violet-500/20">Get it — $5.99 one-time</a>
+      <a href="#how" class="border border-white/15 hover:border-white/30 px-7 py-3.5 rounded-xl transition">See how it works</a>
+    </div>
+    <p class="mt-4 text-xs text-slate-500">One-time purchase · No subscription · 100% local · Works on any site</p>
+  </section>
+
+  <!-- Hero screenshot -->
+  <section class="max-w-5xl mx-auto px-6 pb-20">
+    <div class="rounded-2xl border border-white/10 overflow-hidden shadow-2xl shadow-black/50">
+      <img src="shot-2-panel.png" alt="Styleprint extracting a full design system from a live page" class="w-full" />
+    </div>
+  </section>
+
+  <!-- How -->
+  <section id="how" class="max-w-5xl mx-auto px-6 py-8 grid sm:grid-cols-3 gap-5">
+    <div class="card rounded-2xl p-6">
+      <div class="w-9 h-9 rounded-lg grad-btn mb-4"></div>
+      <h3 class="font-bold mb-2">Scan the whole page</h3>
+      <p class="text-sm text-slate-400">One click harvests every color, font family, size, spacing value, radius and shadow — deduped and ranked by usage.</p>
+    </div>
+    <div class="card rounded-2xl p-6">
+      <div class="w-9 h-9 rounded-lg grad-btn mb-4"></div>
+      <h3 class="font-bold mb-2">Export in your format</h3>
+      <p class="text-sm text-slate-400">Copy production-ready <span class="font-mono text-violet-300">tailwind.config.js</span>, CSS custom properties, or JSON design tokens. No cleanup.</p>
+    </div>
+    <div class="card rounded-2xl p-6">
+      <div class="w-9 h-9 rounded-lg grad-btn mb-4"></div>
+      <h3 class="font-bold mb-2">100% local</h3>
+      <p class="text-sm text-slate-400">Runs on-demand in your browser. No account, no server, nothing transmitted. It only reads the page when you click.</p>
+    </div>
+  </section>
+
+  <!-- Export showcase -->
+  <section class="max-w-4xl mx-auto px-6 py-14">
+    <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8">Copy as Tailwind, CSS variables, or JSON</h2>
+    <div class="rounded-2xl border border-white/10 overflow-hidden shadow-xl">
+      <img src="shot-3-export.png" alt="Tailwind config exported from a website" class="w-full" />
+    </div>
+  </section>
+
+  <!-- Pricing / get -->
+  <section id="get" class="max-w-md mx-auto px-6 py-16 text-center">
+    <div class="card rounded-2xl p-8">
+      <p class="text-sm uppercase tracking-widest text-slate-400">Launch price</p>
+      <p class="mt-2 text-5xl font-black">$5.99</p>
+      <p class="text-slate-400 text-sm mt-1">one-time · yours forever · free updates</p>
+      <ul class="text-left text-sm text-slate-300 mt-6 space-y-2">
+        <li>✓ Scan any page → full design system</li>
+        <li>✓ Tailwind / CSS variables / JSON export</li>
+        <li>✓ Element inspector — copy any element's CSS</li>
+        <li>✓ 100% local · no tracking · no account</li>
+      </ul>
+
+      <!-- Validation: measure buy-intent + capture email. Wire the button to Gumroad once live. -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="mt-7 flex flex-col gap-2">
+        <input type="email" name="email" required placeholder="you@email.com"
+               class="bg-[#0d0f15] border border-white/10 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-violet-500" />
+        <button type="submit" class="grad-btn text-white font-bold px-6 py-3.5 rounded-xl">Notify me at launch — get 30% off</button>
+      </form>
+      <p class="mt-3 text-xs text-slate-500">Launching soon. Early subscribers get the discount + first access.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="max-w-2xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-bold text-center mb-8">FAQ</h2>
+    <div class="space-y-5 text-sm">
+      <div><p class="font-semibold">Does it work on any site?</p><p class="text-slate-400">Yes — it reads the live rendered page, so it works on any website, even ones behind a login.</p></div>
+      <div><p class="font-semibold">Is my data safe?</p><p class="text-slate-400">Completely. It runs only when you click, reads the page locally, and sends nothing anywhere. No account, no server.</p></div>
+      <div><p class="font-semibold">Subscription?</p><p class="text-slate-400">No. One-time $5.99, yours forever, with free updates.</p></div>
+      <div><p class="font-semibold">Which browsers?</p><p class="text-slate-400">Chrome, Edge, Brave, and Opera. Firefox coming.</p></div>
+    </div>
+  </section>
+
+  <footer class="max-w-6xl mx-auto px-6 py-10 text-center text-xs text-slate-600 border-t border-white/5">
+    © 2026 Styleprint · <a href="mailto:anuragpjain7@gmail.com" class="underline">anuragpjain7@gmail.com</a>
+  </footer>
+</body>
+</html>
